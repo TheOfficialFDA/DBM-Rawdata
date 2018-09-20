@@ -15,6 +15,16 @@
       "name": "Check Member Permissions"
     },
     {
+      "condition": "0",
+      "comparison": "0",
+      "value": "1 ",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "14",
+      "name": "Check Parameters"
+    },
+    {
       "info": "0",
       "infoIndex": "1",
       "storage": "1",
@@ -30,7 +40,25 @@
       "name": "Delete Bulk Messages"
     },
     {
+      "time": "5",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "I have purged `${tempVars(\"number\")}` messages..",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
       "name": "End Action Sequence"
+    },
+    {
+      "comment": "no permo",
+      "color": "#ff00ff",
+      "name": "Comment"
     },
     {
       "title": ":x: NO PERMISSION",
@@ -54,6 +82,40 @@
     {
       "storage": "1",
       "varName": "embed",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "comment": "No numbo so no purgeo",
+      "color": "#008040",
+      "name": "Comment"
+    },
+    {
+      "title": "But if you don't put a number hows we gonna purgeo it?",
+      "author": "",
+      "color": "RED",
+      "timestamp": "false",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "embed3",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "",
+      "message": "Sorry buddo, but to purge messages you need to like I don't know....*put in a number*?\nSilly boi",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "embed3",
       "channel": "0",
       "varName2": "",
       "name": "Send Embed Message"

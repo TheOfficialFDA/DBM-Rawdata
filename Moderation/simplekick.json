@@ -15,6 +15,33 @@
       "name": "Check Member Permissions"
     },
     {
+      "condition": "1",
+      "comparison": "0",
+      "value": "1",
+      "iftrue": "2",
+      "iftrueVal": "12",
+      "iffalse": "2",
+      "iffalseVal": "18",
+      "name": "Check Parameters"
+    },
+    {
+      "condition": "0",
+      "comparison": "0",
+      "value": "1",
+      "iftrue": "2",
+      "iftrueVal": "12",
+      "iffalse": "2",
+      "iffalseVal": "18",
+      "name": "Check Parameters"
+    },
+    {
+      "info": "0",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "user",
+      "name": "Store Command Params"
+    },
+    {
       "info": "1",
       "infoIndex": "2",
       "storage": "1",
@@ -90,6 +117,40 @@
     {
       "storage": "1",
       "varName": "embed",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "comment": "No mention :(",
+      "color": "#8000ff",
+      "name": "Comment"
+    },
+    {
+      "title": "Woo are you tryna kick?",
+      "author": "",
+      "color": "RED",
+      "timestamp": "true",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "embed3",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed3",
+      "message": "Hey, so, erm to kick somone you need to mention them? Just letting ya know.",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "embed3",
       "channel": "0",
       "varName2": "",
       "name": "Send Embed Message"

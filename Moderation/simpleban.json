@@ -2,23 +2,50 @@
   "name": "ban",
   "permissions": "NONE",
   "restriction": "1",
-  "_id": "uxKep",
+  "_id": "nDIQl",
   "actions": [
     {
       "member": "1",
       "varName": "",
       "permission": "BAN_MEMBERS",
       "iftrue": "2",
-      "iftrueVal": "7",
+      "iftrueVal": "8",
       "iffalse": "0",
       "iffalseVal": "8",
       "name": "Check Member Permissions"
     },
     {
+      "condition": "1",
+      "comparison": "0",
+      "value": "1",
+      "iftrue": "2",
+      "iftrueVal": "12",
+      "iffalse": "2",
+      "iffalseVal": "18",
+      "name": "Check Parameters"
+    },
+    {
+      "condition": "0",
+      "comparison": "0",
+      "value": "1",
+      "iftrue": "2",
+      "iftrueVal": "12",
+      "iffalse": "2",
+      "iffalseVal": "18",
+      "name": "Check Parameters"
+    },
+    {
+      "info": "0",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "user",
+      "name": "Store Command Params"
+    },
+    {
       "info": "1",
       "infoIndex": "2",
       "storage": "1",
-      "varName": "bano",
+      "varName": "kik ",
       "name": "Store Command Params"
     },
     {
@@ -37,15 +64,15 @@
     {
       "storage": "1",
       "varName": "noperm",
-      "message": "Sorry, but you do not have permission to execute this command!",
-      "name": "Set Embed Description"
+      "message": "${member} ",
+      "footerIcon": "",
+      "name": "Set Embed Footer"
     },
     {
       "storage": "1",
       "varName": "noperm",
-      "message": "${member} ",
-      "footerIcon": "",
-      "name": "Set Embed Footer"
+      "message": "Sorry, but you do not have permission to execute this command!",
+      "name": "Set Embed Description"
     },
     {
       "storage": "1",
@@ -58,9 +85,14 @@
       "name": "End Action Sequence"
     },
     {
+      "comment": "Kick",
+      "color": "#8000ff",
+      "name": "Comment"
+    },
+    {
       "member": "0",
       "varName": "",
-      "reason": "${tempVars(\"bano\")}",
+      "reason": "${tempVars(\"kik \")}",
       "name": "Ban Member"
     },
     {
@@ -85,6 +117,40 @@
     {
       "storage": "1",
       "varName": "embed",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "comment": "No mention :(",
+      "color": "#8000ff",
+      "name": "Comment"
+    },
+    {
+      "title": "Woo are you tryna bano?",
+      "author": "",
+      "color": "RED",
+      "timestamp": "true",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "embed3",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed3",
+      "message": "Hey, so, erm to ban somone you need to mention them? Just letting ya know.",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "embed3",
       "channel": "0",
       "varName2": "",
       "name": "Send Embed Message"

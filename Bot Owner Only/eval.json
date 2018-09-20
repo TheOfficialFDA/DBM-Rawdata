@@ -1,0 +1,69 @@
+{
+  "name": "eval",
+  "permissions": "NONE",
+  "restriction": "4",
+  "_id": "ZeZDe",
+  "actions": [
+    {
+      "info": "1",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "eval",
+      "name": "Store Command Params"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "2",
+      "storage": "1",
+      "varName2": "requsr",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "16",
+      "storage": "1",
+      "varName2": "reqavr",
+      "name": "Store Member Info"
+    },
+    {
+      "behavior": "0",
+      "interpretation": "0",
+      "code": "${tempVars(\"eval\")}",
+      "storage": "1",
+      "varName": "output",
+      "name": "Run Script"
+    },
+    {
+      "title": "Done",
+      "author": "",
+      "color": "BLUE",
+      "timestamp": "true",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": "**:inbox_tray::**\n```js\n${tempVars(\"eval\")}\n```\n**:outbox_tray::**\n```js\n${tempVars(\"output\")}\n```",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    }
+  ],
+  "comType": "0",
+  "_aliases": [
+    "compile"
+  ]
+}
