@@ -1,0 +1,120 @@
+{
+  "name": "embed",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "uSnBK",
+  "actions": [
+    {
+      "storage": "1",
+      "varName": "hex",
+      "name": "Generate Random Hex Color"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "What would you like the title to be?",
+      "storage": "1",
+      "varName2": "msg1",
+      "name": "Send Message"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "filter": "content.length > 0",
+      "max": "1",
+      "time": "60000",
+      "storage2": "1",
+      "varName2": "title",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "13",
+      "name": "Await Response Call Action"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "What would you like the description to be?\n\nP.S: Respond within 4 mins",
+      "storage": "1",
+      "varName2": "msg2",
+      "name": "Send Message"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "filter": "content.length > 0",
+      "max": "1",
+      "time": "140000",
+      "storage2": "1",
+      "varName2": "desc",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "13",
+      "name": "Await Response Call Action"
+    },
+    {
+      "title": "${tempVars(\"title\")}",
+      "author": "",
+      "color": "#6699ff",
+      "timestamp": "false",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": "${tempVars(\"desc\")}",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "name": "Delete Message"
+    },
+    {
+      "storage": "1",
+      "varName": "msg1",
+      "name": "Delete Message"
+    },
+    {
+      "storage": "1",
+      "varName": "title",
+      "name": "Delete Message"
+    },
+    {
+      "storage": "1",
+      "varName": "desc",
+      "name": "Delete Message"
+    },
+    {
+      "storage": "1",
+      "varName": "msg2",
+      "name": "Delete Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "channel": "1",
+      "varName": "",
+      "message": "You did not respond fast enough..",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    }
+  ],
+  "comType": "0"
+}

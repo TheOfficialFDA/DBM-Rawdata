@@ -15,26 +15,6 @@
       "name": "Check Member Permissions"
     },
     {
-      "condition": "1",
-      "comparison": "0",
-      "value": "1",
-      "iftrue": "2",
-      "iftrueVal": "12",
-      "iffalse": "2",
-      "iffalseVal": "18",
-      "name": "Check Parameters"
-    },
-    {
-      "condition": "0",
-      "comparison": "0",
-      "value": "1",
-      "iftrue": "2",
-      "iftrueVal": "12",
-      "iffalse": "2",
-      "iffalseVal": "18",
-      "name": "Check Parameters"
-    },
-    {
       "info": "0",
       "infoIndex": "1",
       "storage": "1",
@@ -85,9 +65,29 @@
       "name": "End Action Sequence"
     },
     {
-      "comment": "Kick",
+      "comment": "banarino ",
       "color": "#8000ff",
       "name": "Comment"
+    },
+    {
+      "condition": "1",
+      "comparison": "0",
+      "value": "1",
+      "iftrue": "2",
+      "iftrueVal": "12",
+      "iffalse": "2",
+      "iffalseVal": "18",
+      "name": "Check Parameters"
+    },
+    {
+      "condition": "0",
+      "comparison": "0",
+      "value": "1",
+      "iftrue": "2",
+      "iftrueVal": "12",
+      "iffalse": "2",
+      "iffalseVal": "18",
+      "name": "Check Parameters"
     },
     {
       "member": "0",
