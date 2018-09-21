@@ -1,0 +1,59 @@
+{
+  "name": "profilepic",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "gYrhS",
+  "actions": [
+    {
+      "info": "2",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "ppls",
+      "name": "Store Command Params"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "info": "1",
+      "storage": "1",
+      "varName2": "mem",
+      "name": "Store Member Info"
+    },
+    {
+      "condition": "1",
+      "comparison": "0",
+      "value": "1",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "7",
+      "name": "Check Parameters"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "storage": "1",
+      "varName2": "memberpik",
+      "name": "Create Image from Avatar"
+    },
+    {
+      "storage": "1",
+      "varName": "stolenpfp",
+      "channel": "0",
+      "varName2": "",
+      "message": ":) ",
+      "name": "Send Image"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Hey :( \n\nPlease mention em'",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    }
+  ]
+}
