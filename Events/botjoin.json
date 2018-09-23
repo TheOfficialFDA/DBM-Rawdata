@@ -1,0 +1,125 @@
+{
+  "name": "botjoin",
+  "temp": "",
+  "event-type": "4",
+  "_id": "uiovD",
+  "actions": [
+    {
+      "server": "0",
+      "varName": "",
+      "info": "2",
+      "storage": "1",
+      "varName2": "servername",
+      "name": "Store Server Info"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "info": "4",
+      "storage": "1",
+      "varName2": "serverregion",
+      "name": "Store Server Info"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "info": "11",
+      "storage": "1",
+      "varName2": "serverowner",
+      "name": "Store Server Info"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "info": "5",
+      "storage": "1",
+      "varName2": "iconurl",
+      "name": "Store Server Info"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "info": "2",
+      "storage": "1",
+      "varName2": "servername",
+      "name": "Store Server Info"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "info": "0",
+      "storage": "1",
+      "varName2": "servermakeday",
+      "name": "Store Server Things"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "info": "17",
+      "storage": "1",
+      "varName2": "humancount",
+      "name": "Store Server Things"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "info": "4",
+      "storage": "1",
+      "varName2": "botjoin date",
+      "name": "Store Server Things"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "info": "5",
+      "storage": "1",
+      "varName2": "chanammount",
+      "name": "Store Server Things"
+    },
+    {
+      "title": "",
+      "author": "${tempVars(\"servername\")}",
+      "color": "36393E",
+      "timestamp": "false",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": "Server Name: `${tempVars(\"servername\")}`\nServer Creation Date: `${tempVars(\"servermakeday\")}`\nServer Owner: `${tempVars(\"serverowner\")}`\nServer Members: `${tempVars(\"humancount\")}`\nServer Region: `${tempVars(\"serverregion\")}`\nBot Join Date: `${tempVars(\"botjoin date\")}`\n",
+      "name": "Set Embed Description"
+    },
+    {
+      "info": "0",
+      "find": "480441079368515595",
+      "storage": "1",
+      "varName": "tsupport",
+      "name": "Find Server"
+    },
+    {
+      "server": "1",
+      "varName": "tsupport",
+      "name": "Change Server"
+    },
+    {
+      "info": "0",
+      "find": "490371324401811457",
+      "storage": "1",
+      "varName": "joinchannel",
+      "name": "Find Channel"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "channel": "5",
+      "varName2": "joinchannel",
+      "name": "Send Embed Message"
+    }
+  ]
+}
