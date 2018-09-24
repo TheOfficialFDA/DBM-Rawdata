@@ -8,10 +8,10 @@
       "condition": "0",
       "comparison": "0",
       "value": "2",
-      "iftrue": "2",
+      "iftrue": "0",
       "iftrueVal": "",
-      "iffalse": "0",
-      "iffalseVal": "",
+      "iffalse": "2",
+      "iffalseVal": "8",
       "name": "Check Parameters"
     },
     {
