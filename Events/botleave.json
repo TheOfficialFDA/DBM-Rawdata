@@ -97,7 +97,7 @@
     },
     {
       "info": "0",
-      "find": "480441079368515595",
+      "find": "${serverVars(\"serv\")}",
       "storage": "1",
       "varName": "tsupport",
       "name": "Find Server"
@@ -109,7 +109,7 @@
     },
     {
       "info": "0",
-      "find": "490371324401811457",
+      "find": "${serverVars(\"chan\")}",
       "storage": "1",
       "varName": "joinchannel",
       "name": "Find Channel"

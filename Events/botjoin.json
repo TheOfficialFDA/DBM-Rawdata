@@ -77,6 +77,14 @@
       "name": "Store Server Things"
     },
     {
+      "server": "0",
+      "varName": "",
+      "info": "1",
+      "storage": "1",
+      "varName2": "id",
+      "name": "Store Server Info"
+    },
+    {
       "title": "",
       "author": "${tempVars(\"servername\")}",
       "color": "36393E",
@@ -92,33 +100,33 @@
     {
       "storage": "1",
       "varName": "embed",
-      "message": "Server Name: `${tempVars(\"servername\")}`\nServer Creation Date: `${tempVars(\"servermakeday\")}`\nServer Owner: `${tempVars(\"serverowner\")}`\nServer Members: `${tempVars(\"humancount\")}`\nServer Region: `${tempVars(\"serverregion\")}`\nBot Join Date: `${tempVars(\"botjoin date\")}`\n",
+      "message": "Server Name: `${tempVars(\"servername\")}`\nServer ID: `${tempVars(\"id\")}`\nServer Creation Date: `${tempVars(\"servermakeday\")}`\nServer Owner: `${tempVars(\"serverowner\")}`\nServer Members: `${tempVars(\"humancount\")}`\nServer Region: `${tempVars(\"serverregion\")}`\nBot Join Date: `${tempVars(\"botjoin date\")}`\n",
       "name": "Set Embed Description"
     },
     {
       "info": "0",
-      "find": "480441079368515595",
+      "find": "${serverVars(\"serv\")}",
       "storage": "1",
-      "varName": "tsupport",
+      "varName": "servere",
       "name": "Find Server"
     },
     {
       "server": "1",
-      "varName": "tsupport",
+      "varName": "servere",
       "name": "Change Server"
     },
     {
       "info": "0",
-      "find": "490371324401811457",
+      "find": "${serverVars(\"chan\")}",
       "storage": "1",
-      "varName": "joinchannel",
+      "varName": "chan",
       "name": "Find Channel"
     },
     {
       "storage": "1",
       "varName": "embed",
       "channel": "5",
-      "varName2": "joinchannel",
+      "varName2": "chan",
       "name": "Send Embed Message"
     }
   ]
