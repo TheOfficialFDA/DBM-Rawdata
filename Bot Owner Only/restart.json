@@ -31,7 +31,7 @@
     {
       "behavior": "0",
       "interpretation": "0",
-      "code": "",
+      "code": "process.exit()",
       "storage": "0",
       "varName": "",
       "name": "Run Script"
