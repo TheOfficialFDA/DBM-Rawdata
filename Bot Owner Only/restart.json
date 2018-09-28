@@ -1,0 +1,40 @@
+{
+  "name": "restart",
+  "permissions": "NONE",
+  "restriction": "4",
+  "_id": "MlKdY",
+  "actions": [
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Okay, give us a second",
+      "storage": "1",
+      "varName2": "restartmsg",
+      "name": "Send Message"
+    },
+    {
+      "time": "3",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "storage": "1",
+      "varName": "restartmsg",
+      "message": ":arrow_clockwise: Okay, we're restarting now!",
+      "name": "Edit Message"
+    },
+    {
+      "time": "1",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "behavior": "0",
+      "interpretation": "0",
+      "code": "",
+      "storage": "0",
+      "varName": "",
+      "name": "Run Script"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "_id": "lSmiS",
   "actions": [
     {
-      "channel": "1",
+      "channel": "0",
       "varName": "",
       "message": "*What would you like to sey you're bot's game too?*",
       "storage": "0",
@@ -18,7 +18,7 @@
       "filter": "content.length > 0",
       "max": "1",
       "time": "60000",
-      "storage2": "1",
+      "storage2": "3",
       "varName2": "zagame",
       "iftrue": "0",
       "iftrueVal": "",
@@ -30,6 +30,11 @@
       "time": "5",
       "measurement": "1",
       "name": "Wait"
+    },
+    {
+      "storage": "3",
+      "varName": "zagame",
+      "name": "Save Variable"
     },
     {
       "gameName": "${tempVars(\"zagame\")}",
@@ -58,7 +63,7 @@
     {
       "storage": "1",
       "varName": "embed",
-      "message": "Unity ©",
+      "message": "Rhino ©",
       "footerIcon": "",
       "name": "Set Embed Footer"
     },
@@ -69,5 +74,7 @@
       "varName2": "",
       "name": "Send Embed Message"
     }
-  ]
+  ],
+  "comType": "0"
+}
 }
