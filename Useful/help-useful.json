@@ -1,0 +1,35 @@
+{
+  "name": "help-useful",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "iEZZC",
+  "actions": [
+    {
+      "title": "» Rhino Help Menu | Useful Module ",
+      "author": "",
+      "color": "36393E ",
+      "timestamp": "false",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": "Here are the useful commands.\n\n`userinfo {user}` - Information about a user.\n`serverinfo` - Information about the server.\n`embed` - Embeds text.\n`time` - Wonder what time it is...\n`randomnum` - Generate some random stuff\n`randompass` - Random password. \n`bitcoin` - Bitcoin prices.\n`poll` - Make a poll <3.",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    }
+  ],
+  "comType": "0"
+}

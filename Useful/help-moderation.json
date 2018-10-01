@@ -1,0 +1,35 @@
+{
+  "name": "help-moderation",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "cTvuG",
+  "actions": [
+    {
+      "title": "» Rhino Help Menu | Moderation Module ",
+      "author": "",
+      "color": "36393E ",
+      "timestamp": "false",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": "Here are the moderation commands.\n\n`ban {user} {reason}` - Ban a user.\n`kick {user} {reason}` - Kick a user.\n`purge {number}` - Purge Messages",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    }
+  ],
+  "comType": "0"
+}

@@ -1,0 +1,35 @@
+{
+  "name": "help-trolling",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "RYCxk",
+  "actions": [
+    {
+      "title": "» Rhino Help Menu | Trolling/Fun Module ",
+      "author": "",
+      "color": "36393E ",
+      "timestamp": "false",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": "Here are the trolling & Fun commands.\n\n`8ball {text}` - 8ball stuffo\n`hex` - Generates a random hex code.\n`hack {user}` - Hack a user!\n`911` - Call 911!\n`tiny {text}` - Make text tiny \n`fidgetspinner` - How long will it spin? :wink:\n`meme` - Sends a meme.",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    }
+  ],
+  "comType": "0"
+}
