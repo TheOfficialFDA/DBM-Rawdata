@@ -1,0 +1,72 @@
+{
+  "name": "guilds",
+  "permissions": "NONE",
+  "restriction": "4",
+  "_id": "Ktdvx",
+  "actions": [
+    {
+      "list": "4",
+      "varName": "",
+      "start": "- ",
+      "middle": "",
+      "end": "\\n",
+      "storage": "1",
+      "varName2": "test",
+      "name": "Convert List to Text"
+    },
+    {
+      "info": "3",
+      "storage": "1",
+      "varName2": "guilds",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "info": "4",
+      "storage": "1",
+      "varName2": "users",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "info": "18",
+      "storage": "1",
+      "varName2": "ids",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "title": "",
+      "author": "",
+      "color": "GREEN",
+      "timestamp": "false",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": "Total Guilds: ${tempVars(\"guilds\")}",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "Guilds List",
+      "message": "${tempVars(\"test\")}(${tempVars(\"ids\")})",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "name": "Send Embed Message"
+    }
+  ]
+}
